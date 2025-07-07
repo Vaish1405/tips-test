@@ -1,0 +1,31 @@
+name: Generate Random Tip JSON
+
+on:
+  schedule:
+    - cron: '* * * * *' 
+  workflow_dispatch:
+
+jobs:
+  update-tip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Python script
+        run: |
+          python generate_tip.py
+
+      - name: Commit and push JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add json/tip.json
+          git commit -m "chore: update tip.json" || echo "No changes"
+          git push
