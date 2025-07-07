@@ -10,11 +10,11 @@
         "headingFontWeight": "bold",
         "headingLevel": 2,
         "headingTextAlignment": "center",
-        "headingTextColor": "#d22030",
-    }
+        "headingTextColor": "#d22030"
+    },
     {
         "elementType": "html",
-        "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\r\nHydrate and use sunscreen :)\r\n</div>",
+        "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\r\nHydrate and use sunscreen :)\r\n</div>"
     }
   ]
 }
