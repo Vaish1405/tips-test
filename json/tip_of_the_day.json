@@ -5,21 +5,16 @@
   "contentContainerWidth": "wide",
   "content": [
     {
-      "elementType": "fullWidthSection",
-      "content": [
-        {
-          "elementType": "blockHeading",
-          "heading": "Tip of the day",
-          "headingFontWeight": "bold",
-          "headingLevel": 2,
-          "headingTextAlignment": "center",
-          "headingTextColor": "#d22030"
-        },
-        {
-          "elementType": "html",
-          "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\n    Prioritize mental health and seek support when necessary.\n    </div>",
-        }
-      ],
+      "elementType": "blockHeading",
+      "heading": "Tip of the day",
+      "headingFontWeight": "bold",
+      "headingLevel": 2,
+      "headingTextAlignment": "center",
+      "headingTextColor": "#d22030"
+    },
+    {
+      "elementType": "html",
+      "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\n    Prioritize mental health and seek support when necessary.\n</div>"
     }
   ]
 }
