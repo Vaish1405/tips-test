@@ -14,15 +14,12 @@
           "headingLevel": 2,
           "headingTextAlignment": "center",
           "headingTextColor": "#d22030",
-          "uuid": "723a0598-b4c6-4d85-b687-e83d9af52b3a"
         },
         {
           "elementType": "html",
           "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\n    Prioritize mental health and seek support when necessary.\n    </div>",
-          "uuid": "f5019066-6f07-4b3a-9d59-e08897cbc89d"
         }
       ],
-      "uuid": "a7d5bb57-f332-40c2-b5f5-92aa5a8a91f5"
     }
   ]
 }
