@@ -5,16 +5,19 @@
   "contentContainerWidth": "wide",
   "content": [
     {
-      "elementType": "blockHeading",
-      "heading": "Tip of the day",
-      "headingFontWeight": "bold",
-      "headingLevel": 2,
-      "headingTextAlignment": "center",
-      "headingTextColor": "#d22030"
+        "elementType": "blockHeading",
+        "heading": "Tip of the day ",
+        "headingFontWeight": "bold",
+        "headingLevel": 2,
+        "headingTextAlignment": "center",
+        "headingTextColor": "#d22030",
+        "visibility": [],
     },
     {
-      "elementType": "html",
-      "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\n    Prioritize mental health and seek support when necessary.\n</div>"
+        "elementType": "html",
+        "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\r\nHydrate and use sunscreen :)\r\n</div>",
+        "visibility": [],
+        "uuid": "66c646fd-92e7-4e12-b1d6-64d9c9724532"
     }
   ]
 }
