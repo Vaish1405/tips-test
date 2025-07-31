@@ -6,7 +6,7 @@
   "content": [
     {
       "elementType": "blockHeading",
-      "heading": "Tip of the day",
+      "heading": "Apply Early for Scholarships and Campus Jobs",
       "headingFontWeight": "bold",
       "headingLevel": 2,
       "headingTextAlignment": "center",
@@ -14,7 +14,34 @@
     },
     {
       "elementType": "html",
-      "html": "<div class=\"container\" style=\"text-align:center; font-weight:bold;\">\r\nMaintain a balanced diet and avoid skipping meals.\r\n</div>"
+      "html": "<div class=\"container\" style=\"padding: 10px\">CSUN offers multiple funding opportunities. Applying early increases your chances and gives you time to gather strong materials.</div>"
+    },
+    {
+      "elementType": "list",
+      "backgroundColor": "theme:subfocal_background_color",
+      "headingTextAlignment": "center",
+      "itemSize": "large",
+      "listStyle": "grouped",
+      "marginBottom": "medium",
+      "marginTop": "xloose",
+      "textblockMargin": "xloose",
+      "items": [
+        {
+          "accessory": "external",
+          "backgroundColor": "#ffffff",
+          "textblockMargin": "xloose",
+          "title": "More Information",
+          "titleFontSize": "xxlarge",
+          "titleFontWeight": "medium",
+          "titleTextColor": "#d22030",
+          "url": {
+            "browserType": "appScreen",
+            "linkType": "external",
+            "external": "",
+            "targetNewWindow": true
+          }
+        }
+      ]
     }
   ]
 }
