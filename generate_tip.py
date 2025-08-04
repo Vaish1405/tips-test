@@ -98,7 +98,7 @@ def build_json(tip):
                         "content": [
                             {
                                 "elementType": "html",
-                                "html": f"<div style=\"text-align:center\">\r\n<h3>${tip['Title']}</h3>\r\n<p>${tip['Description']}</p>\r\n</div>"                            }
+                                "html": f"<div style=\"text-align:center\">\r\n<h3>{tip['Title']}</h3>\r\n<p>{tip['Description']}</p>\r\n</div>"                            }
                         ]
                     }
                 ]
