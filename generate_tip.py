@@ -60,53 +60,50 @@ def pick_random_tip(tips, current_week, shown_ids):
     return random.choice(eligible)
 
 def build_json(tip):
-    tip_text = f'{tip["Title"]}<br>{tip["Description"]}<br><a href="{tip["Link"]}">{tip["Link"]}</a>'
+    # tip_text = f'{tip["Title"]}<br>{tip["Description"]}<br><a href="{tip["Link"]}">{tip["Link"]}</a>'
     return {
         "metadata": {
             "version": "2.0"
         },
         "contentContainerWidth": "wide",
-     "content": [
-        {
-            "elementType": "blockHeading",
-            "heading": tip['Title'],
-            "headingFontWeight": "bold",
-            "headingLevel": 2,
-            "headingTextAlignment": "center",
-            "headingTextColor": "#d22030"
-        },
-        {
-            "elementType": "html",
-            "html" : f'<div class="container" style="padding: 10px">{tip["Description"]}</div>'
-        },
-        {
-            "elementType": "list",
-            "backgroundColor": "theme:subfocal_background_color",
-            "headingTextAlignment": "center",
-            "itemSize": "large",
-            "listStyle": "grouped",
-            "marginBottom": "medium",
-            "marginTop": "xloose",
-            "textblockMargin": "xloose",
-            "items": [
-                {
-                    "accessory": "external",
-                    "backgroundColor": "#ffffff",
-                    "textblockMargin": "xloose",
-                    "title": "More Information",
-                    "titleFontSize": "xxlarge",
-                    "titleFontWeight": "medium",
-                    "titleTextColor": "#d22030",
-                    "url": {
-                        "browserType": "appScreen",
-                        "linkType": "external",
-                        "external": tip["Link"],
-                        "targetNewWindow": True
+        "content": [
+            {
+                "elementType": "collapsible",
+                "borderTopStyle": "none",
+                "contentBackgroundColor": "#f5f5f5",
+                "description": tip["Category"],
+                "descriptionFontSize": "xlarge",
+                "descriptionLineHeight": "xxtight",
+                "headingBackgroundColor": "white",
+                "image": {
+                    "url": "kgo://asset_cache/resource_storage/proxy/modulepage/mobile_redesign_student_2024-_/id_0_home/3805e61e-955e-44bc-8996-d7ddada3ac9f_image_url_e4ce3d291ca52ddef0222098be810cc0/daily-tip-icon.png?_kgourl_is_resource=1"
+                },
+                "imageHeight": "large",
+                "imageWidth": "large",
+                "marginBottom": "none",
+                "marginTop": "none",
+                "showTitleBottomBorder": True,
+                "title": "Tip of the Day",
+                "titleFontWeight": "medium",
+                "titleTextColor": "#d22030",
+                "visibility": [],
+                "wrapperBackgroundColor": "#f5f5f5",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "backgroundColor": "white",
+                        "borderRadius": "medium",
+                        "padding": "medium",
+                        "wrapperStyle": "subfocal",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": f"<div style=\"text-align:center\">\r\n<h3>${tip['Title']}</h3>\r\n<p>${tip['Description']}</p>\r\n</div>"                            }
+                        ]
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
     }
 
 
@@ -130,9 +127,9 @@ def main(start_date_str, csv_file):
 
         tip_json = build_json(selected_tip)
         save_tip_to_json(tip_json, Path("public/json/tip.json"))
-        print("✅ Tip JSON updated with:", selected_tip["Title"])
+        print("Tip JSON updated with:", selected_tip["Title"])
     else:
-        print("😎 All tips for this week have already been shown. Nothing new to show today!")
+        print("All tips for this week have already been shown. Nothing new to show today!")
 
 if __name__ == "__main__":
     # Set your semester start date and tip CSV file here:

@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "version": "2.0"
+  },
+  "contentContainerWidth": "wide",
+  "content": [
+    {
+      "elementType": "collapsible",
+      "borderTopStyle": "none",
+      "contentBackgroundColor": "#f5f5f5",
+      "description": "Engagement & Resources",
+      "descriptionFontSize": "xlarge",
+      "descriptionLineHeight": "xxtight",
+      "headingBackgroundColor": "white",
+      "image": {
+        "url": "kgo://asset_cache/resource_storage/proxy/modulepage/mobile_redesign_student_2024-_/id_0_home/3805e61e-955e-44bc-8996-d7ddada3ac9f_image_url_e4ce3d291ca52ddef0222098be810cc0/daily-tip-icon.png?_kgourl_is_resource=1"
+      },
+      "imageHeight": "large",
+      "imageWidth": "large",
+      "marginBottom": "none",
+      "marginTop": "none",
+      "showTitleBottomBorder": true,
+      "title": "Tip of the Day",
+      "titleFontWeight": "medium",
+      "titleTextColor": "#d22030",
+      "visibility": [],
+      "wrapperBackgroundColor": "#f5f5f5",
+      "content": [
+        {
+          "elementType": "container",
+          "backgroundColor": "white",
+          "borderRadius": "medium",
+          "padding": "medium",
+          "wrapperStyle": "subfocal",
+          "content": [
+            {
+              "elementType": "html",
+              "html": "<div style=\"text-align:center\">\r\n<h3>$Ask for Help When You Need It</h3>\r\n<p>$Whether academic, personal, or logistical, CSUN offers services to support you. Reaching out early can prevent small issues from becoming major challenges.</p>\r\n</div>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
